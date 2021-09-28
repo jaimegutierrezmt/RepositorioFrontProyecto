@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Modelo 1</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColElsCtr #container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+-->
+</style>
+<script language="javascript" type="text/javascript" src="scripts/alcancevariables.js"></script>
+</head>
+<body class="oneColElsCtr" onload="darBienvenida()">
+<form id="formulario1" name="formulario1">
+<div id="container">
+  <div id="mainContent">
+    <p align="center"><img src="imagenes/logoCUN.jpg"  alt="Universidad EAN" longdesc="http://www.ean.edu.co" /></p>
+    <h1>Universidad EAN - Desarrollo Web</h1>
+    <p><strong>Docente: Arquitecto Jaime Alberto Gutiérrez Mejía. 2018</strong></p>
+    <p>
+		<h2>EJEMPLO DE FUNCIONES CON ALCANCE LOCAL A TODO EL SCRIPT</h2>
+		Número 1:  <input type="text" id="numero1" name="numero1"/>
+		<br/>
+		Número 2:  <input type="text" id="numero2" name="numero2"/>
+		<br/>
+		<br/>
+		<input type="button" id="botonAceptar" name="botonAceptar" value="Calcular Expresiones" onclick="calcularExpresiones()"/>
+	</p>
+    <h2>RESULTADOS</h2>
+    <p>
+	   Resultado de la función calcularSuma():  <input type="text" id="resultado1" name="resultado1"/>
+	   <br/>
+	   <br/>
+	   Resultado de la función calcularProducto(n1,n2):  <input type="text" id="resultado2" name="resultado2"/>
+	   <br/>
+	   <br/>
+	   Resultado de la función calcularPotencia(n1,n2):  <input type="text" id="resultado3" name="resultado3"/>
+	   <br/>
+	   <br/>
+	</p>
+	<br/>
+	<br/>
+    <h2>FUNCIONES INVOCADAS AL PRESIONAR UN BOTÓN</h2>
+	Número de notas:  <input type="text" id="numeronotas" name="numeronotas"/>
+	<br/>
+	<br/>
+	Función para calcular el promedio de notas:  <input type="button" id="botonPromedio" name="botonPromedio" 
+	value="Calcular Promedio Notas" onclick="calcularPromedioNotas(parseInt(document.getElementById('numeronotas').value))"/>
+	<br/>
+	<br/>
+	<br/>
+	Tamaño de la Matriz:  <input type="text" id="limite" name="limite"/>
+	<br/>
+	<br/>
+	Función para imprimir los valores de una matriz de números pares:  <input type="button" id="botonMatriz" name="botonMatriz" 
+	value="Imprimir Matriz" onclick="imprimirMatrizNumerosPares(parseInt(document.getElementById('limite').value))"/>
+	<br/>
+	<br/>
+  <!-- end #mainContent --></div>
+<!-- end #container --></div>
+</form>
+</body>
+</html>
