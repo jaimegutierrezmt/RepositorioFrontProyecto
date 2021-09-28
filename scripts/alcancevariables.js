@@ -25,6 +25,11 @@
 	var numero1 = 0;
 	var numero2 = 0;
 	var resultado = 0;
+	var calculo = 0;
+	var estaBien = false;
+	var nombre = "Jaime";
+	var caracter = '\0';
+	var numeroReal = 333.445;
 	/****************************************/
 	/****************************************/
 	/****************************************/
@@ -39,6 +44,8 @@
 	function calcularSuma ()
 	{
 		resultado = numero1 + numero2;
+		console.log ("resultado: " + resultado);
+		console.log ("estaBien: " + estaBien);
 		return (resultado);
 	}
 	/****************************************/
